@@ -2,7 +2,13 @@ sudo: required
 language: node_js
 service:
  - docker
+before_install:
+ - yum install httpd -y
 script:
  - ls
  - docker images
+ - echo "hello" >> /var/www/html/index.html
+ - service httpd start
+ - curl http://localhost:80
+
 # gowthamshankar
