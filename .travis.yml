@@ -9,8 +9,8 @@ script:
  - uname -r
  - ls
  - docker images
- - sudo echo "hello" >> /var/www/html/index.html
+ - sudo echo "hello" >> /var/www/html/gowtham.html
  - service apache2 start
- - curl http://localhost:80
+ - curl http://localhost:80/gowtham.html
 
 # gowthamshankar
