@@ -3,7 +3,7 @@ language: node_js
 service:
  - docker
 before_install:
-# - yum install httpd -y
+ - apt install httpd -y
 script:
  - uname -r
  - ls
