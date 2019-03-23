@@ -10,7 +10,7 @@ script:
  - ls
  - docker images
  - sudo echo "hello" >> /var/www/html/index.html
- - service httpd start
+ - service apache2 start
  - curl http://localhost:80
 
 # gowthamshankar
