@@ -9,7 +9,7 @@ script:
  - uname -r
  - ls
  - docker images
- - echo "hello" >> /var/www/html/index.html
+ - sudo echo "hello" >> /var/www/html/index.html
  - service httpd start
  - curl http://localhost:80
 
