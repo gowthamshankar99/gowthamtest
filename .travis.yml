@@ -3,8 +3,9 @@ language: node_js
 service:
  - docker
 before_install:
- - yum install httpd -y
+# - yum install httpd -y
 script:
+ - uname -r
  - ls
  - docker images
  - echo "hello" >> /var/www/html/index.html
